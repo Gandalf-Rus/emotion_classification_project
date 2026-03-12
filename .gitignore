@@ -1,0 +1,28 @@
+# virtual env
+venv/
+.env
+
+# python cache
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebook cache
+.ipynb_checkpoints/
+
+# project data (ignoring contents of folders)
+data/raw/*
+data/processed/*
+data/splits/*
+data/external/*
+
+# allows to Git see the folders themselves (if empty files .gitkeep are created)
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/splits/.gitkeep
+!data/external/.gitkeep
+
+# model weights and results
+models/*.pt
+models/*.pkl
+results/*
+!results/.gitkeep
