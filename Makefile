@@ -1,8 +1,9 @@
 VENV = venv
 PYTHON = python3
 PIP = $(VENV)/bin/pip
+JUPYTER = $(VENV)/bin/jupyter
 
-.PHONY: venv install freeze activate clean 
+.PHONY: venv install freeze activate clean start_jupyter_server
 
 venv:
 	$(PYTHON) -m venv $(VENV)
@@ -19,3 +20,6 @@ activate:
 
 clean:
 	rm -rf $(VENV)
+
+start_jupyter: venv
+	$(JUPYTER) notebook --no-browser
