@@ -3,7 +3,7 @@ PYTHON = python3
 PIP = $(VENV)/bin/pip
 JUPYTER = $(VENV)/bin/jupyter
 
-.PHONY: venv install freeze activate clean start_jupyter_server
+.PHONY: venv install freeze activate clean start_jupyter
 
 venv:
 	$(PYTHON) -m venv $(VENV)
