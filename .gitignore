@@ -25,5 +25,7 @@ data/features/*
 # model weights and results
 models/*/*.pt
 models/*/*.pkl
+models/*/*.pth
+models/*/*.json
 results/*
 !results/.gitkeep
